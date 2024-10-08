@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# updatemem v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Tue Apr 11 14:02:45 2023
+# Process ID: 39960
+# Current directory: c:/FPGA/PulseWidthCalc_ArtyS7
+# Command line: updatemem.exe -mode batch -source C:/Xilinx/SDK/2018.3/scripts/updatemem/main.tcl -notrace -tclargs -meminfo C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.sdk/BlockDesignArtyS7_wrapper_hw_platform_0/BlockDesignArtyS7_wrapper.mmi -data C:/Xilinx/SDK/2018.3/data/embeddedsw/lib/microblaze/mb_bootloop_le.elf -proc BlockDesignArtyS7_i/microblaze_0 -bit C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.sdk/BlockDesignArtyS7_wrapper_hw_platform_0/BlockDesignArtyS7_wrapper.bit -out C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.sdk/BlockDesignArtyS7_wrapper_hw_platform_0/download.bit -force
+# Log file: c:/FPGA/PulseWidthCalc_ArtyS7/updatemem.log
+# Journal file: c:/FPGA/PulseWidthCalc_ArtyS7\updatemem.jou
+#-----------------------------------------------------------
+source C:/Xilinx/SDK/2018.3/scripts/updatemem/main.tcl -notrace
+ Loading bitfile C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.sdk/BlockDesignArtyS7_wrapper_hw_platform_0/BlockDesignArtyS7_wrapper.bit
+Loading data files...
+Updating memory content...
+Creating bitstream...
+Writing bitstream C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.sdk/BlockDesignArtyS7_wrapper_hw_platform_0/download.bit...
+  update_mem: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 516.031 ; gain = 431.398
+INFO: [Common 17-206] Exiting updatemem at Tue Apr 11 14:02:56 2023...

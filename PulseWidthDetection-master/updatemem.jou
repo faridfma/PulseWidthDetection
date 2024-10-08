@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# updatemem v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Wed Apr 12 16:15:22 2023
+# Process ID: 43552
+# Current directory: C:/FPGA/PulseWidthCalc_ArtyS7
+# Command line: updatemem.exe -mode batch -source C:/Xilinx/SDK/2018.3/scripts/updatemem/main.tcl -notrace -tclargs -meminfo C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.sdk/BlockDesignArtyS7_wrapper_hw_platform_0/BlockDesignArtyS7_wrapper.mmi -data C:/Xilinx/SDK/2018.3/data/embeddedsw/lib/microblaze/mb_bootloop_le.elf -proc BlockDesignArtyS7_i/microblaze_0 -bit C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.sdk/BlockDesignArtyS7_wrapper_hw_platform_0/BlockDesignArtyS7_wrapper.bit -out C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.sdk/BlockDesignArtyS7_wrapper_hw_platform_0/download.bit -force
+# Log file: C:/FPGA/PulseWidthCalc_ArtyS7/updatemem.log
+# Journal file: C:/FPGA/PulseWidthCalc_ArtyS7\updatemem.jou
+#-----------------------------------------------------------
+source C:/Xilinx/SDK/2018.3/scripts/updatemem/main.tcl -notrace

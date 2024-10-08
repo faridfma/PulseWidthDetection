@@ -1,0 +1,967 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Apr 19 16:55:41 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_PulseIP_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BlockDesignArtyS7_PulseIP_0_0 (dali.local:user:PulseIP:1.0) from (Rev. 30) to (Rev. 31)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Apr 19 16:46:43 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_PulseIP_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BlockDesignArtyS7_PulseIP_0_0 (dali.local:user:PulseIP:1.0) from (Rev. 29) to (Rev. 30)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Apr 19 16:34:27 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_PulseIP_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BlockDesignArtyS7_PulseIP_0_0 (dali.local:user:PulseIP:1.0) from (Rev. 28) to (Rev. 29)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Apr 19 16:14:37 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_PulseIP_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BlockDesignArtyS7_PulseIP_0_0 (dali.local:user:PulseIP:1.0) from (Rev. 27) to (Rev. 28)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Apr 19 15:28:33 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_PulseIP_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BlockDesignArtyS7_PulseIP_0_0 (dali.local:user:PulseIP:1.0) from (Rev. 26) to (Rev. 27)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Apr 14 12:39:14 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_PulseIP_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BlockDesignArtyS7_PulseIP_0_0 (dali.local:user:PulseIP:1.0) from (Rev. 25) to (Rev. 26)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Apr 14 09:08:00 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_PulseIP_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BlockDesignArtyS7_PulseIP_0_0 (dali.local:user:PulseIP:1.0) from (Rev. 24) to (Rev. 25)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Apr 13 16:58:18 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_PulseIP_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BlockDesignArtyS7_PulseIP_0_0 (dali.local:user:PulseIP:1.0) from (Rev. 23) to (Rev. 24)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Apr 12 17:34:27 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_PulseIP_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BlockDesignArtyS7_PulseIP_0_0 (dali.local:user:PulseIP:1.0) from (Rev. 22) to (Rev. 23)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Apr 12 15:35:20 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_PulseIP_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BlockDesignArtyS7_PulseIP_0_0 (dali.local:user:PulseIP:1.0) from (Rev. 21) to (Rev. 22)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Apr 12 15:24:40 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_PulseIP_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BlockDesignArtyS7_PulseIP_0_0 (dali.local:user:PulseIP:1.0) from (Rev. 20) to (Rev. 21)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Apr 11 18:06:37 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_PulseIP_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BlockDesignArtyS7_PulseIP_0_0 (dali.local:user:PulseIP:1.0) from (Rev. 19) to (Rev. 20)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Apr 11 14:30:21 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_PulseIP_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BlockDesignArtyS7_PulseIP_0_0 (dali.local:user:PulseIP:1.0) from (Rev. 18) to (Rev. 19)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Apr 11 13:52:27 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_PulseIP_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BlockDesignArtyS7_PulseIP_0_0 (dali.local:user:PulseIP:1.0) from (Rev. 17) to (Rev. 18)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Apr 11 13:11:23 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_PulseIP_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BlockDesignArtyS7_PulseIP_0_0 (dali.local:user:PulseIP:1.0) from (Rev. 16) to (Rev. 17)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Apr 11 12:50:49 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_PulseIP_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BlockDesignArtyS7_PulseIP_0_0 (dali.local:user:PulseIP:1.0) from (Rev. 15) to (Rev. 16)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Apr 11 12:25:53 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_PulseIP_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BlockDesignArtyS7_PulseIP_0_0 (dali.local:user:PulseIP:1.0) from (Rev. 14) to (Rev. 15)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Apr 11 11:43:25 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_PulseIP_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BlockDesignArtyS7_PulseIP_0_0 (dali.local:user:PulseIP:1.0) from (Rev. 13) to (Rev. 14)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Apr 11 10:49:14 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_PulseIP_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BlockDesignArtyS7_PulseIP_0_0 (dali.local:user:PulseIP:1.0) from (Rev. 12) to (Rev. 13)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Apr 10 18:02:49 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_PulseIP_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BlockDesignArtyS7_PulseIP_0_0 (dali.local:user:PulseIP:1.0) from (Rev. 11) to (Rev. 12)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Apr 10 17:54:48 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_PulseIP_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BlockDesignArtyS7_PulseIP_0_0 (dali.local:user:PulseIP:1.0) from (Rev. 10) to (Rev. 11)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Apr 10 17:31:51 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_PulseIP_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BlockDesignArtyS7_PulseIP_0_0 (dali.local:user:PulseIP:1.0) from (Rev. 9) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Apr 10 16:43:18 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_rst_clk_wiz_1_100M_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BlockDesignArtyS7_rst_clk_wiz_1_100M_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 13)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Apr 10 16:43:18 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_microblaze_0_xlconcat_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BlockDesignArtyS7_microblaze_0_xlconcat_0 (xilinx.com:ip:xlconcat:2.1 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Apr 10 16:43:18 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_microblaze_0_axi_periph_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BlockDesignArtyS7_microblaze_0_axi_periph_0 (xilinx.com:ip:axi_interconnect:2.1 (Rev. 19)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Apr 10 16:43:18 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_microblaze_0_axi_intc_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BlockDesignArtyS7_microblaze_0_axi_intc_0 (xilinx.com:ip:axi_intc:4.1 (Rev. 12)) to Vivado generation flows.
+
+2. Upgrade messages
+-------------------
+
+WARNING: upgrade cannot add parameter C_IRQ_CONNECTION with default value 0 : a parameter called C_IRQ_CONNECTION already exists in axi_intc_v4_1
+Set parameter C_IVAR_RESET_VALUE to value 0x0000000000000010 (source 'default')
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Apr 10 16:43:17 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_microblaze_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BlockDesignArtyS7_microblaze_0_0 (xilinx.com:ip:microblaze:11.0) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Apr 10 16:43:17 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_mdm_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BlockDesignArtyS7_mdm_1_0 (xilinx.com:ip:mdm:3.2 (Rev. 15)) to Vivado generation flows.
+
+2. Upgrade messages
+-------------------
+
+Set parameter C_M_AXIS_ID_WIDTH to value 7 (source 'default')
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Apr 10 16:43:17 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_lmb_bram_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BlockDesignArtyS7_lmb_bram_0 (xilinx.com:ip:blk_mem_gen:8.4 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Apr 10 16:43:17 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_ilmb_v10_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BlockDesignArtyS7_ilmb_v10_0 (xilinx.com:ip:lmb_v10:3.0 (Rev. 9)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Apr 10 16:43:17 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_ilmb_bram_if_cntlr_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BlockDesignArtyS7_ilmb_bram_if_cntlr_0 (xilinx.com:ip:lmb_bram_if_cntlr:4.0 (Rev. 15)) to Vivado generation flows.
+
+2. Upgrade messages
+-------------------
+
+Set parameter C_MASK1 to value 0x0000000000800000 (source 'default')
+Set parameter C_MASK2 to value 0x0000000000800000 (source 'default')
+Set parameter C_MASK3 to value 0x0000000000800000 (source 'default')
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Apr 10 16:43:17 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_dlmb_v10_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BlockDesignArtyS7_dlmb_v10_0 (xilinx.com:ip:lmb_v10:3.0 (Rev. 9)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Apr 10 16:43:17 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_dlmb_bram_if_cntlr_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BlockDesignArtyS7_dlmb_bram_if_cntlr_0 (xilinx.com:ip:lmb_bram_if_cntlr:4.0 (Rev. 15)) to Vivado generation flows.
+
+2. Upgrade messages
+-------------------
+
+Set parameter C_MASK1 to value 0x0000000000800000 (source 'default')
+Set parameter C_MASK2 to value 0x0000000000800000 (source 'default')
+Set parameter C_MASK3 to value 0x0000000000800000 (source 'default')
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Apr 10 16:43:17 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_clk_wiz_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BlockDesignArtyS7_clk_wiz_1_0 (xilinx.com:ip:clk_wiz:6.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Apr 10 16:43:17 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_axi_uartlite_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BlockDesignArtyS7_axi_uartlite_0_0 (xilinx.com:ip:axi_uartlite:2.0 (Rev. 22)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Apr 10 16:43:17 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_PulseIP_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of BlockDesignArtyS7_PulseIP_0_0 (dali.local:user:PulseIP:1.0 (Rev. 9)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Apr 10 16:39:35 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_PulseIP_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of BlockDesignArtyS7_PulseIP_0_0 (dali.local:user:PulseIP:1.0) from (Rev. 8) to (Rev. 9)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'BlockDesignArtyS7_PulseIP_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'clk600MHz'
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Apr 10 16:07:32 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_PulseIP_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BlockDesignArtyS7_PulseIP_0_0 (dali.local:user:PulseIP:1.0) from (Rev. 7) to (Rev. 8)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Apr 10 15:17:39 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_PulseIP_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of BlockDesignArtyS7_PulseIP_0_0 (dali.local:user:PulseIP:1.0) from (Rev. 6) to (Rev. 7)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'BlockDesignArtyS7_PulseIP_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'led_0'
+
+-Upgrade has added port 'ledd'
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Apr 10 15:04:29 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_PulseIP_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BlockDesignArtyS7_PulseIP_0_0 (dali.local:user:PulseIP:1.0) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Apr 10 14:28:09 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_PulseIP_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of BlockDesignArtyS7_PulseIP_0_0 (dali.local:user:PulseIP:1.0) from (Rev. 4) to (Rev. 5)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'BlockDesignArtyS7_PulseIP_0_0'.
+
+
+-Upgrade has added interface 'reset_n' (xilinx.com:signal:reset:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'BlockDesignArtyS7_PulseIP_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'reset_n'
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Apr 10 14:01:12 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_PulseIP_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BlockDesignArtyS7_PulseIP_0_0 (dali.local:user:PulseIP:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Apr 10 13:37:47 2023
+| Host         : DVANOFFICE-071 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s50csga324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'BlockDesignArtyS7_PulseIP_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of BlockDesignArtyS7_PulseIP_0_0 (dali.local:user:PulseIP:1.0) from (Rev. 2) to (Rev. 3)
+

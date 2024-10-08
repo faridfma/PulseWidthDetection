@@ -1,0 +1,484 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Apr 10 10:04:37 2023
+# Process ID: 8416
+# Current directory: C:/FPGA/PulseWidthCalc_ArtyS7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2856 C:\FPGA\PulseWidthCalc_ArtyS7\PulseWidthCalc_ArtyS7.xpr
+# Log file: C:/FPGA/PulseWidthCalc_ArtyS7/vivado.log
+# Journal file: C:/FPGA/PulseWidthCalc_ArtyS7\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.xpr
+update_compile_order -fileset sources_1
+reset_run synth_3
+launch_runs impl_3 -to_step write_bitstream -jobs 8
+wait_on_run impl_3
+open_run impl_3
+open_bd_design {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd}
+delete_bd_objs [get_bd_ports ledmagic]
+delete_bd_objs [get_bd_ports pulse]
+save_bd_design
+reset_run synth_3
+launch_runs impl_3 -to_step write_bitstream -jobs 8
+wait_on_run impl_3
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7s50_0] -mem_dev [lindex [get_cfgmem_parts {is25lp016d-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+close_hw
+refresh_design
+open_bd_design {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd}
+delete_bd_objs [get_bd_nets clk_wiz_1_clk_out2]
+connect_bd_net [get_bd_ports CLK100MHZ] [get_bd_pins PulseTest_0/clk600MHz]
+generate_target all [get_files  C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd]
+export_ip_user_files -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/sim_scripts -ip_user_files_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files -ipstatic_source_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/modelsim} {questa=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/questa} {riviera=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/riviera} {activehdl=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -top
+reset_run synth_3
+launch_runs impl_3 -to_step write_bitstream -jobs 8
+wait_on_run impl_3
+open_bd_design {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd}
+delete_bd_objs [get_bd_nets CLK100MHZ]
+undo
+delete_bd_objs [get_bd_nets CLK100MHZ]
+connect_bd_net [get_bd_ports CLK100MHZ] [get_bd_pins clk_wiz_1/clk_in1]
+connect_bd_net [get_bd_pins PulseTest_0/clk600MHz] [get_bd_pins clk_wiz_1/clk_out1]
+save_bd_design
+generate_target all [get_files  C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd]
+export_ip_user_files -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/sim_scripts -ip_user_files_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files -ipstatic_source_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/modelsim} {questa=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/questa} {riviera=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/riviera} {activehdl=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -top
+reset_run synth_3
+launch_runs impl_3 -to_step write_bitstream -jobs 8
+wait_on_run impl_3
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7s50_0] -mem_dev [lindex [get_cfgmem_parts {is25lp016d-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+close_hw
+open_bd_design {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd}
+make_wrapper -files [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -top
+reset_run synth_3
+launch_runs impl_3 -to_step write_bitstream -jobs 8
+wait_on_run impl_3
+update_module_reference BlockDesignArtyS7_PulseTest_0_0
+startgroup
+make_bd_pins_external  [get_bd_pins PulseTest_0/led_0]
+endgroup
+delete_bd_objs [get_bd_nets PulseTest_0_led] [get_bd_ports led_0]
+set_property name led_0 [get_bd_ports led_0_0]
+generate_target all [get_files  C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd]
+export_ip_user_files -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/sim_scripts -ip_user_files_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files -ipstatic_source_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/modelsim} {questa=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/questa} {riviera=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/riviera} {activehdl=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -top
+reset_run synth_3
+launch_runs impl_3 -to_step write_bitstream -jobs 8
+wait_on_run impl_3
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7s50_0] -mem_dev [lindex [get_cfgmem_parts {is25lp016d-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+close_hw
+open_bd_design {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd}
+open_bd_design {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd}
+delete_bd_objs [get_bd_nets led] [get_bd_cells GPIOs_0]
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference GPIOs GPIOs_0
+set_property location {3 786 822} [get_bd_cells GPIOs_0]
+set_property location {2 369 850} [get_bd_cells GPIOs_0]
+connect_bd_net [get_bd_pins GPIOs_0/CLK] [get_bd_pins clk_wiz_1/clk_out2]
+connect_bd_net [get_bd_ports led] [get_bd_pins GPIOs_0/led]
+set_property location {1019 840} [get_bd_ports led]
+set_property location {1329 847} [get_bd_ports led]
+set_property location {295 903} [get_bd_ports led]
+regenerate_bd_layout
+regenerate_bd_layout
+set_property location {589 455} [get_bd_ports led]
+set_property location {545 466} [get_bd_ports led]
+set_property location {581 589} [get_bd_ports led]
+set_property location {513 422} [get_bd_ports led]
+set_property location {2 284 916} [get_bd_cells GPIOs_0]
+set_property location {898 918} [get_bd_ports led]
+set_property location {695 958} [get_bd_ports led]
+set_property location {1217 912} [get_bd_ports led]
+regenerate_bd_layout
+regenerate_bd_layout
+set_property location {540 449} [get_bd_ports led]
+set_property location {587 -55} [get_bd_ports led]
+set_property location {592 -41} [get_bd_ports led]
+set_property location {540 -49} [get_bd_ports led]
+set_property location {582 -34} [get_bd_ports led]
+set_property location {440 -25} [get_bd_ports led]
+set_property location {549 -33} [get_bd_ports led]
+connect_bd_net [get_bd_ports reset_n] [get_bd_pins GPIOs_0/reset_n]
+delete_bd_objs [get_bd_nets pulse_0_1] [get_bd_nets PulseTest_0_led_0] [get_bd_cells PulseTest_0]
+update_compile_order -fileset sources_1
+delete_bd_objs [get_bd_ports led_0]
+update_module_reference {BlockDesignArtyS7_GPIOs_0_0 BlockDesignArtyS7_GPIOs_0_1}
+update_compile_order -fileset sources_1
+set_property location {1070 456} [get_bd_ports led]
+startgroup
+make_bd_pins_external  [get_bd_pins GPIOs_0/pulse]
+endgroup
+delete_bd_objs [get_bd_ports pulse_0]
+set_property name pulse_0 [get_bd_ports pulse_1]
+regenerate_bd_layout
+generate_target all [get_files  C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd]
+export_ip_user_files -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/sim_scripts -ip_user_files_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files -ipstatic_source_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/modelsim} {questa=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/questa} {riviera=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/riviera} {activehdl=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property location {1892 829} [get_bd_ports led]
+open_bd_design {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd}
+regenerate_bd_layout
+regenerate_bd_layout -routing
+set_property location {520 840} [get_bd_ports led]
+regenerate_bd_layout
+save_bd_design
+reset_run synth_3
+launch_runs impl_3 -to_step write_bitstream -jobs 8
+wait_on_run impl_3
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7s50_0] -mem_dev [lindex [get_cfgmem_parts {is25lp016d-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+close_hw
+open_bd_design {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd}
+startgroup
+set_property -dict [list CONFIG.PRIMITIVE {MMCM} CONFIG.ENABLE_CLOCK_MONITOR {false} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {400.000} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.FEEDBACK_SOURCE {FDBK_AUTO} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {8.000} CONFIG.MMCM_CLKIN1_PERIOD {10.000} CONFIG.MMCM_CLKIN2_PERIOD {10.000} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {8.000} CONFIG.MMCM_CLKOUT1_DIVIDE {2} CONFIG.CLKOUT1_JITTER {209.270} CONFIG.CLKOUT1_PHASE_ERROR {114.212} CONFIG.CLKOUT2_JITTER {166.809} CONFIG.CLKOUT2_PHASE_ERROR {114.212}] [get_bd_cells clk_wiz_1]
+endgroup
+save_bd_design
+update_module_reference BlockDesignArtyS7_GPIOs_0_1
+generate_target all [get_files  C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd]
+export_ip_user_files -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/sim_scripts -ip_user_files_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files -ipstatic_source_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/modelsim} {questa=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/questa} {riviera=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/riviera} {activehdl=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_3
+launch_runs impl_3 -to_step write_bitstream -jobs 8
+wait_on_run impl_3
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7s50_0] -mem_dev [lindex [get_cfgmem_parts {is25lp016d-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_3/BlockDesignArtyS7_wrapper.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+close_hw
+close_design
+open_bd_design {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd}
+set_property location {532 821} [get_bd_ports led]
+startgroup
+create_bd_cell -type ip -vlnv dali.local:user:FastPulseWidthCalc:1.0 FastPulseWidthCalc_0
+endgroup
+set_property location {4 940 883} [get_bd_cells FastPulseWidthCalc_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/FastPulseWidthCalc_0/S00_AXI} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins FastPulseWidthCalc_0/S00_AXI]
+update_module_reference BlockDesignArtyS7_GPIOs_0_1
+delete_bd_objs [get_bd_nets clk_wiz_1_clk_out2]
+connect_bd_net [get_bd_pins GPIOs_0/CLK] [get_bd_pins clk_wiz_1/locked]
+connect_bd_net [get_bd_pins FastPulseWidthCalc_0/clk600MHz] [get_bd_pins clk_wiz_1/clk_out2]
+delete_bd_objs [get_bd_nets pulse_1_1]
+connect_bd_net [get_bd_ports pulse_0] [get_bd_pins FastPulseWidthCalc_0/pulse]
+startgroup
+make_bd_pins_external  [get_bd_pins FastPulseWidthCalc_0/ledmagic]
+endgroup
+ipx::edit_ip_in_project -upgrade true -name FastPulseWidthCalc_v1_0_project -directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.tmp/FastPulseWidthCalc_v1_0_project c:/FPGA/ip_repo/FastPulseWidthCalc_1.0/component.xml
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 39 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/FPGA/ip_repo/FastPulseWidthCalc_1.0
+report_ip_status -name ip_status 
+upgrade_ip -vlnv dali.local:user:FastPulseWidthCalc:1.0 [get_ips  BlockDesignArtyS7_FastPulseWidthCalc_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips BlockDesignArtyS7_FastPulseWidthCalc_0_0] -no_script -sync -force -quiet
+delete_bd_objs [get_bd_nets GPIOs_0_led] [get_bd_cells GPIOs_0]
+delete_bd_objs [get_bd_ports led]
+update_compile_order -fileset sources_1
+generate_target all [get_files  C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd]
+export_ip_user_files -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/sim_scripts -ip_user_files_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files -ipstatic_source_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/modelsim} {questa=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/questa} {riviera=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/riviera} {activehdl=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+create_bd_cell -type module -reference GPIOs GPIOs_0
+set_property location {2 583 943} [get_bd_cells GPIOs_0]
+connect_bd_net [get_bd_pins GPIOs_0/CLK] [get_bd_pins clk_wiz_1/clk_out1]
+connect_bd_net [get_bd_ports reset_n] [get_bd_pins GPIOs_0/reset_n]
+update_module_reference BlockDesignArtyS7_GPIOs_0_0
+update_compile_order -fileset sources_1
+update_module_reference BlockDesignArtyS7_GPIOs_0_0
+startgroup
+make_bd_pins_external  [get_bd_pins GPIOs_0/led]
+endgroup
+set_property name led [get_bd_ports led_0]
+set_property name ledmagic [get_bd_ports ledmagic_0]
+save_bd_design
+generate_target all [get_files  C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd]
+export_ip_user_files -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/sim_scripts -ip_user_files_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files -ipstatic_source_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/modelsim} {questa=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/questa} {riviera=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/riviera} {activehdl=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -top
+report_ip_status -name ip_status 
+set_property location {2553 979} [get_bd_ports led]
+save_bd_design
+reset_run synth_3
+launch_runs impl_3 -to_step write_bitstream -jobs 8
+wait_on_run impl_3
+file copy -force C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_3/BlockDesignArtyS7_wrapper.sysdef C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.sdk/BlockDesignArtyS7_wrapper.hdf
+
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_3/BlockDesignArtyS7_wrapper.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7s50_0] -mem_dev [lindex [get_cfgmem_parts {is25lp016d-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_3/BlockDesignArtyS7_wrapper.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+close_hw
+open_bd_design {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd}
+set_property name pulse [get_bd_ports pulse_0]
+ipx::edit_ip_in_project -upgrade true -name FastPulseWidthCalc_v1_0_project -directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.tmp/FastPulseWidthCalc_v1_0_project c:/FPGA/ip_repo/FastPulseWidthCalc_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 40 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/FPGA/ip_repo/FastPulseWidthCalc_1.0
+report_ip_status -name ip_status 
+upgrade_ip -vlnv dali.local:user:FastPulseWidthCalc:1.0 [get_ips  BlockDesignArtyS7_FastPulseWidthCalc_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips BlockDesignArtyS7_FastPulseWidthCalc_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd]
+export_ip_user_files -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/sim_scripts -ip_user_files_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files -ipstatic_source_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/modelsim} {questa=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/questa} {riviera=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/riviera} {activehdl=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -top
+report_ip_status -name ip_status 
+reset_run synth_3
+launch_runs impl_3 -to_step write_bitstream -jobs 8
+wait_on_run impl_3
+file copy -force C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_3/BlockDesignArtyS7_wrapper.sysdef C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.sdk/BlockDesignArtyS7_wrapper.hdf
+
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_3/BlockDesignArtyS7_wrapper.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7s50_0] -mem_dev [lindex [get_cfgmem_parts {is25lp016d-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_3/BlockDesignArtyS7_wrapper.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+close_hw
+export_ip_user_files -of_objects  [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/new/PusesTest.vhd] -no_script -reset -force -quiet
+remove_files  C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/new/PusesTest.vhd
+delete_bd_objs [get_bd_nets pulse_0_1] [get_bd_nets clk_wiz_1_clk_out2] [get_bd_nets FastPulseWidthCalc_0_ledmagic] [get_bd_intf_nets microblaze_0_axi_periph_M02_AXI] [get_bd_cells FastPulseWidthCalc_0]
+create_peripheral dali.local user PulseIP 1.0 -dir C:/FPGA/PulseWidthCalc_ArtyS7/../ip_repo
+add_peripheral_interface S00_AXI -interface_mode slave -axi_type lite [ipx::find_open_core dali.local:user:PulseIP:1.0]
+generate_peripheral -driver -bfm_example_design -debug_hw_example_design [ipx::find_open_core dali.local:user:PulseIP:1.0]
+write_peripheral [ipx::find_open_core dali.local:user:PulseIP:1.0]
+set_property  ip_repo_paths  {C:/FPGA/PulseWidthCalc_ArtyS7/../ip_repo/PulseIP_1.0 C:/FPGA/ip_repo/FastPulseWidthCalc_1.0} [current_project]
+update_ip_catalog -rebuild
+ipx::edit_ip_in_project -upgrade true -name edit_PulseIP_v1_0 -directory C:/FPGA/PulseWidthCalc_ArtyS7/../ip_repo c:/FPGA/ip_repo/PulseIP_1.0/component.xml
+update_compile_order -fileset sources_1
+close [ open C:/FPGA/PulseWidthCalc_ArtyS7/VHDL/PulseDetect.vhd w ]
+add_files C:/FPGA/PulseWidthCalc_ArtyS7/VHDL/PulseDetect.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+current_project PulseWidthCalc_ArtyS7
+current_project edit_PulseIP_v1_0
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/FPGA/ip_repo/PulseIP_1.0
+open_bd_design {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd}
+delete_bd_objs [get_bd_ports ledmagic]
+startgroup
+create_bd_cell -type ip -vlnv dali.local:user:PulseIP:1.0 PulseIP_0
+endgroup
+set_property location {5.5 1445 821} [get_bd_cells PulseIP_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/PulseIP_0/S00_AXI} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins PulseIP_0/S00_AXI]
+startgroup
+make_bd_pins_external  [get_bd_pins PulseIP_0/pulse]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins PulseIP_0/led_0]
+endgroup
+generate_target all [get_files  C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd]
+export_ip_user_files -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/sim_scripts -ip_user_files_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files -ipstatic_source_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/modelsim} {questa=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/questa} {riviera=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/riviera} {activehdl=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+ipx::edit_ip_in_project -upgrade true -name PulseIP_v1_0_project -directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.tmp/PulseIP_v1_0_project c:/FPGA/ip_repo/PulseIP_1.0/component.xml
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 3 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/FPGA/ip_repo/PulseIP_1.0
+report_ip_status -name ip_status 
+upgrade_ip -vlnv dali.local:user:PulseIP:1.0 [get_ips  BlockDesignArtyS7_PulseIP_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips BlockDesignArtyS7_PulseIP_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd]
+export_ip_user_files -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/sim_scripts -ip_user_files_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files -ipstatic_source_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/modelsim} {questa=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/questa} {riviera=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/riviera} {activehdl=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+delete_bd_objs [get_bd_nets pulse_0_1] [get_bd_ports pulse_0]
+connect_bd_net [get_bd_ports reset_n] [get_bd_pins PulseIP_0/pulse]
+undo
+connect_bd_net [get_bd_ports pulse] [get_bd_pins PulseIP_0/pulse]
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout -routing
+set_property location {-30 584} [get_bd_ports pulse]
+set_property name led_0 [get_bd_ports led_0_0]
+save_bd_design
+generate_target all [get_files  C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd]
+export_ip_user_files -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/sim_scripts -ip_user_files_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files -ipstatic_source_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/modelsim} {questa=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/questa} {riviera=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/riviera} {activehdl=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+make_wrapper -files [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -top
+reset_run synth_3
+launch_runs impl_3 -to_step write_bitstream -jobs 8
+wait_on_run impl_3
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_3/BlockDesignArtyS7_wrapper.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7s50_0] -mem_dev [lindex [get_cfgmem_parts {is25lp016d-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_3/BlockDesignArtyS7_wrapper.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_3/BlockDesignArtyS7_wrapper.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+close_hw
+file copy -force C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_3/BlockDesignArtyS7_wrapper.sysdef C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.sdk/BlockDesignArtyS7_wrapper.hdf
+
+open_bd_design {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd}
+ipx::edit_ip_in_project -upgrade true -name PulseIP_v1_0_project -directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.tmp/PulseIP_v1_0_project c:/FPGA/ip_repo/PulseIP_1.0/component.xml
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 4 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/FPGA/ip_repo/PulseIP_1.0
+report_ip_status -name ip_status 
+upgrade_ip -vlnv dali.local:user:PulseIP:1.0 [get_ips  BlockDesignArtyS7_PulseIP_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips BlockDesignArtyS7_PulseIP_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd]
+export_ip_user_files -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/sim_scripts -ip_user_files_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files -ipstatic_source_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/modelsim} {questa=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/questa} {riviera=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/riviera} {activehdl=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -top
+report_ip_status -name ip_status 
+reset_run synth_3
+launch_runs impl_3 -to_step write_bitstream -jobs 8
+wait_on_run impl_3

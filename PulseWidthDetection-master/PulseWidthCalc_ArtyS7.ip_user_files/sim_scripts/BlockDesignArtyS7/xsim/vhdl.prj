@@ -1,0 +1,18 @@
+vhdl xil_defaultlib  \
+"../../../bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_microblaze_0_0/sim/BlockDesignArtyS7_microblaze_0_0.vhd" \
+"../../../bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_dlmb_v10_0/sim/BlockDesignArtyS7_dlmb_v10_0.vhd" \
+"../../../bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_ilmb_v10_0/sim/BlockDesignArtyS7_ilmb_v10_0.vhd" \
+"../../../bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_dlmb_bram_if_cntlr_0/sim/BlockDesignArtyS7_dlmb_bram_if_cntlr_0.vhd" \
+"../../../bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_ilmb_bram_if_cntlr_0/sim/BlockDesignArtyS7_ilmb_bram_if_cntlr_0.vhd" \
+"../../../bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_microblaze_0_axi_intc_0/sim/BlockDesignArtyS7_microblaze_0_axi_intc_0.vhd" \
+"../../../bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_rst_clk_wiz_1_100M_0/sim/BlockDesignArtyS7_rst_clk_wiz_1_100M_0.vhd" \
+"../../../bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_axi_uartlite_0_0/sim/BlockDesignArtyS7_axi_uartlite_0_0.vhd" \
+"../../../bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_GPIOs_0_0/sim/BlockDesignArtyS7_GPIOs_0_0.vhd" \
+"../../../bd/BlockDesignArtyS7/ipshared/76c8/src/PulseDetect.vhd" \
+"../../../bd/BlockDesignArtyS7/ipshared/76c8/hdl/PulseIP_v1_0_S00_AXI.vhd" \
+"../../../bd/BlockDesignArtyS7/ipshared/76c8/hdl/PulseIP_v1_0.vhd" \
+"../../../bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_PulseIP_0_0/sim/BlockDesignArtyS7_PulseIP_0_0.vhd" \
+"../../../bd/BlockDesignArtyS7/sim/BlockDesignArtyS7.vhd" \
+"../../../bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_mdm_0_0/sim/BlockDesignArtyS7_mdm_0_0.vhd" \
+
+nosort

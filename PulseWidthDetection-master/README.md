@@ -1,0 +1,1 @@
+This code is implemented on ArtysS750. a Microblaze core is implemented on this device. a clock of 400Mkz is used to measure the length of a very short pulse width. Pulse width measurement is displayed on the PC  console via Uart. 

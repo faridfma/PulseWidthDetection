@@ -1,0 +1,1492 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Apr  5 16:47:01 2023
+# Process ID: 27860
+# Current directory: C:/FPGA/PulseWidthCalc_ArtyS7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16528 C:\FPGA\PulseWidthCalc_ArtyS7\PulseWidthCalc_ArtyS7.xpr
+# Log file: C:/FPGA/PulseWidthCalc_ArtyS7/vivado.log
+# Journal file: C:/FPGA/PulseWidthCalc_ArtyS7\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/FPGA/ip_repo/FastPulseWidthCalc_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 821.117 ; gain = 184.066
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Apr  5 16:47:50 2023] Launched impl_1...
+Run output will be captured here: C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/runme.log
+open_bd_design {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd}
+Adding cell -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_intc:4.1 - microblaze_0_axi_intc
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - microblaze_0_xlconcat
+Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding cell -- dali.local:user:FastPulseWidthCalc:1.0 - FastPulseWidthCalc_0
+Adding cell -- xilinx.com:module_ref:GPIOs:1.0 - GPIOs_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_1/clk_out2(clk) and /FastPulseWidthCalc_0/clk600MHz(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_1/clk_out2(clk) and /GPIOs_0/CLK12MHZ(undef)
+Successfully read diagram <BlockDesignArtyS7> from BD file <C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd>
+set_property name led [get_bd_ports led_0]
+save_bd_design
+Wrote  : <C:\FPGA\PulseWidthCalc_ArtyS7\PulseWidthCalc_ArtyS7.srcs\sources_1\bd\BlockDesignArtyS7\BlockDesignArtyS7.bd> 
+Wrote  : <C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ui/bd_38b59005.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+Wrote  : <C:\FPGA\PulseWidthCalc_ArtyS7\PulseWidthCalc_ArtyS7.srcs\sources_1\bd\BlockDesignArtyS7\BlockDesignArtyS7.bd> 
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/synth/BlockDesignArtyS7.vhd
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/sim/BlockDesignArtyS7.vhd
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hdl/BlockDesignArtyS7_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_xlconcat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FastPulseWidthCalc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block GPIOs_0 .
+Exporting to file C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hw_handoff/BlockDesignArtyS7.hwh
+Generated Block Design Tcl file C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hw_handoff/BlockDesignArtyS7_bd.tcl
+Generated Hardware Definition File C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/synth/BlockDesignArtyS7.hwdef
+[Wed Apr  5 16:50:59 2023] Launched synth_1...
+Run output will be captured here: C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/synth_1/runme.log
+[Wed Apr  5 16:50:59 2023] Launched impl_1...
+Run output will be captured here: C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1021.758 ; gain = 36.641
+file copy -force C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.sysdef C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.sdk/BlockDesignArtyS7_wrapper.hdf
+
+open_bd_design {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd}
+ipx::edit_ip_in_project -upgrade true -name FastPulseWidthCalc_v1_0_project -directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.tmp/FastPulseWidthCalc_v1_0_project c:/FPGA/ip_repo/FastPulseWidthCalc_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/fpga/pulsewidthcalc_artys7/pulsewidthcalc_artys7.tmp/fastpulsewidthcalc_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1079.609 ; gain = 37.715
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/FPGA/ip_repo/FastPulseWidthCalc_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1086.355 ; gain = 44.461
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/FPGA/ip_repo/FastPulseWidthCalc_1.0/component.xml' ignored by IP packager.
+set_property core_revision 12 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/FPGA/ip_repo/FastPulseWidthCalc_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/FPGA/ip_repo/FastPulseWidthCalc_1.0'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv dali.local:user:FastPulseWidthCalc:1.0 [get_ips  BlockDesignArtyS7_FastPulseWidthCalc_0_2] -log ip_upgrade.log
+Upgrading 'C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd'
+INFO: [IP_Flow 19-3422] Upgraded BlockDesignArtyS7_FastPulseWidthCalc_0_2 (FastPulseWidthCalc_v1.0 1.0) from revision 11 to revision 12
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_1/clk_out2(clk) and /FastPulseWidthCalc_0_upgraded_ipi/clk600MHz(undef)
+Wrote  : <C:\FPGA\PulseWidthCalc_ArtyS7\PulseWidthCalc_ArtyS7.srcs\sources_1\bd\BlockDesignArtyS7\BlockDesignArtyS7.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/FPGA/PulseWidthCalc_ArtyS7/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips BlockDesignArtyS7_FastPulseWidthCalc_0_2] -no_script -sync -force -quiet
+generate_target all [get_files  C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd]
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+Wrote  : <C:\FPGA\PulseWidthCalc_ArtyS7\PulseWidthCalc_ArtyS7.srcs\sources_1\bd\BlockDesignArtyS7\BlockDesignArtyS7.bd> 
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/synth/BlockDesignArtyS7.vhd
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/sim/BlockDesignArtyS7.vhd
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hdl/BlockDesignArtyS7_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_xlconcat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FastPulseWidthCalc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block GPIOs_0 .
+Exporting to file C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hw_handoff/BlockDesignArtyS7.hwh
+Generated Block Design Tcl file C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hw_handoff/BlockDesignArtyS7_bd.tcl
+Generated Hardware Definition File C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/synth/BlockDesignArtyS7.hwdef
+export_ip_user_files -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/sim_scripts -ip_user_files_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files -ipstatic_source_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/modelsim} {questa=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/questa} {riviera=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/riviera} {activehdl=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+make_wrapper -files [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Apr  5 17:07:50 2023] Launched synth_1...
+Run output will be captured here: C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/synth_1/runme.log
+[Wed Apr  5 17:07:50 2023] Launched impl_1...
+Run output will be captured here: C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/runme.log
+file copy -force C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.sysdef C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.sdk/BlockDesignArtyS7_wrapper.hdf
+
+open_bd_design {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd}
+regenerate_bd_layout
+open_bd_design {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd}
+ipx::edit_ip_in_project -upgrade true -name FastPulseWidthCalc_v1_0_project -directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.tmp/FastPulseWidthCalc_v1_0_project c:/FPGA/ip_repo/FastPulseWidthCalc_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/fpga/pulsewidthcalc_artys7/pulsewidthcalc_artys7.tmp/fastpulsewidthcalc_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1162.121 ; gain = 16.949
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/FPGA/ip_repo/FastPulseWidthCalc_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1162.121 ; gain = 16.949
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/FPGA/ip_repo/FastPulseWidthCalc_1.0/component.xml' ignored by IP packager.
+set_property core_revision 13 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/FPGA/ip_repo/FastPulseWidthCalc_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/FPGA/ip_repo/FastPulseWidthCalc_1.0'
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {BlockDesignArtyS7_GPIOs_0_0 BlockDesignArtyS7_FastPulseWidthCalc_0_2}] -log ip_upgrade.log
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset_n' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'CLK': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/FPGA/ip_repo/FastPulseWidthCalc_1.0'.
+Upgrading 'C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd'
+INFO: [IP_Flow 19-3422] Upgraded BlockDesignArtyS7_FastPulseWidthCalc_0_2 (FastPulseWidthCalc_v1.0 1.0) from revision 12 to revision 13
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_1/clk_out2(clk) and /FastPulseWidthCalc_0_upgraded_ipi/clk600MHz(undef)
+INFO: [IP_Flow 19-1972] Upgraded BlockDesignArtyS7_GPIOs_0_0 from GPIOs_v1_0 1.0 to GPIOs_v1_0 1.0
+WARNING: [IP_Flow 19-4697] Upgrade has added interface 'CLK' (xilinx.com:signal:clock:1.0)
+WARNING: [IP_Flow 19-3670] Detected external interface differences while upgrading 'BlockDesignArtyS7_GPIOs_0_0'.
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'CLK12MHZ'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'CLK'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'BlockDesignArtyS7_GPIOs_0_0'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1167] The pin 'CLK12MHZ' is not found on the upgraded version of the cell '/GPIOs_0'. Its connection to the net 'clk_wiz_1_clk_out2' has been removed.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'BlockDesignArtyS7_GPIOs_0_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/FPGA/PulseWidthCalc_ArtyS7/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <C:\FPGA\PulseWidthCalc_ArtyS7\PulseWidthCalc_ArtyS7.srcs\sources_1\bd\BlockDesignArtyS7\BlockDesignArtyS7.bd> 
+Wrote  : <C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ui/bd_38b59005.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/FPGA/PulseWidthCalc_ArtyS7/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips {BlockDesignArtyS7_GPIOs_0_0 BlockDesignArtyS7_FastPulseWidthCalc_0_2}] -no_script -sync -force -quiet
+generate_target all [get_files  C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd]
+ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source: 
+/GPIOs_0/CLK
+
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd 
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/clk_wiz_1/clk_out1 (100 MHz)" }  [get_bd_pins GPIOs_0/CLK]
+validate_bd_design
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+WARNING: [BD 41-927] Following properties on pin /GPIOs_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_1_clk_out1 
+report_ip_status -name ip_status 
+generate_target all [get_files  C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd]
+INFO: [BD 41-1662] The design 'BlockDesignArtyS7.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\FPGA\PulseWidthCalc_ArtyS7\PulseWidthCalc_ArtyS7.srcs\sources_1\bd\BlockDesignArtyS7\BlockDesignArtyS7.bd> 
+Wrote  : <C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ui/bd_38b59005.ui> 
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/synth/BlockDesignArtyS7.vhd
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/sim/BlockDesignArtyS7.vhd
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hdl/BlockDesignArtyS7_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_xlconcat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FastPulseWidthCalc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block GPIOs_0 .
+Exporting to file C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hw_handoff/BlockDesignArtyS7.hwh
+Generated Block Design Tcl file C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hw_handoff/BlockDesignArtyS7_bd.tcl
+Generated Hardware Definition File C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/synth/BlockDesignArtyS7.hwdef
+export_ip_user_files -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/sim_scripts -ip_user_files_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files -ipstatic_source_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/modelsim} {questa=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/questa} {riviera=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/riviera} {activehdl=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Apr  6 07:45:17 2023] Launched synth_1...
+Run output will be captured here: C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/synth_1/runme.log
+[Thu Apr  6 07:45:17 2023] Launched impl_1...
+Run output will be captured here: C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/runme.log
+file copy -force C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.sysdef C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.sdk/BlockDesignArtyS7_wrapper.hdf
+
+open_bd_design {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd}
+ipx::edit_ip_in_project -upgrade true -name FastPulseWidthCalc_v1_0_project -directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.tmp/FastPulseWidthCalc_v1_0_project c:/FPGA/ip_repo/FastPulseWidthCalc_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/fpga/pulsewidthcalc_artys7/pulsewidthcalc_artys7.tmp/fastpulsewidthcalc_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1215.340 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/FPGA/ip_repo/FastPulseWidthCalc_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1215.340 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+[Thu Apr  6 08:20:20 2023] Launched synth_1...
+Run output will be captured here: c:/fpga/pulsewidthcalc_artys7/pulsewidthcalc_artys7.tmp/fastpulsewidthcalc_v1_0_project/FastPulseWidthCalc_v1_0_project.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Thu Apr  6 08:21:40 2023] Launched synth_1...
+Run output will be captured here: c:/fpga/pulsewidthcalc_artys7/pulsewidthcalc_artys7.tmp/fastpulsewidthcalc_v1_0_project/FastPulseWidthCalc_v1_0_project.runs/synth_1/runme.log
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/FPGA/ip_repo/FastPulseWidthCalc_1.0/component.xml' ignored by IP packager.
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/FPGA/ip_repo/FastPulseWidthCalc_1.0/component.xml' ignored by IP packager.
+INFO: [IP_Flow 19-3166] Bus Interface 'S00_AXI': References existing memory map 'S00_AXI'.
+set_property core_revision 14 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/FPGA/ip_repo/FastPulseWidthCalc_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/FPGA/ip_repo/FastPulseWidthCalc_1.0'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv dali.local:user:FastPulseWidthCalc:1.0 [get_ips  BlockDesignArtyS7_FastPulseWidthCalc_0_2] -log ip_upgrade.log
+Upgrading 'C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd'
+INFO: [IP_Flow 19-3422] Upgraded BlockDesignArtyS7_FastPulseWidthCalc_0_2 (FastPulseWidthCalc_v1.0 1.0) from revision 13 to revision 14
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'clk600MHz'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'BlockDesignArtyS7_FastPulseWidthCalc_0_2'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1167] The pin 'clk600MHz' is not found on the upgraded version of the cell '/FastPulseWidthCalc_0'. Its connection to the net 'clk_wiz_1_clk_out2' has been removed.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'BlockDesignArtyS7_FastPulseWidthCalc_0_2' has identified issues that may require user intervention. Please review the upgrade log 'c:/FPGA/PulseWidthCalc_ArtyS7/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <C:\FPGA\PulseWidthCalc_ArtyS7\PulseWidthCalc_ArtyS7.srcs\sources_1\bd\BlockDesignArtyS7\BlockDesignArtyS7.bd> 
+Wrote  : <C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ui/bd_38b59005.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/FPGA/PulseWidthCalc_ArtyS7/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips BlockDesignArtyS7_FastPulseWidthCalc_0_2] -no_script -sync -force -quiet
+generate_target all [get_files  C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd]
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+WARNING: [BD 41-927] Following properties on pin /GPIOs_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_1_clk_out1 
+Wrote  : <C:\FPGA\PulseWidthCalc_ArtyS7\PulseWidthCalc_ArtyS7.srcs\sources_1\bd\BlockDesignArtyS7\BlockDesignArtyS7.bd> 
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/synth/BlockDesignArtyS7.vhd
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/sim/BlockDesignArtyS7.vhd
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hdl/BlockDesignArtyS7_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_xlconcat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FastPulseWidthCalc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block GPIOs_0 .
+Exporting to file C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hw_handoff/BlockDesignArtyS7.hwh
+Generated Block Design Tcl file C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hw_handoff/BlockDesignArtyS7_bd.tcl
+Generated Hardware Definition File C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/synth/BlockDesignArtyS7.hwdef
+export_ip_user_files -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/sim_scripts -ip_user_files_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files -ipstatic_source_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/modelsim} {questa=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/questa} {riviera=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/riviera} {activehdl=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_bd_design {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd}
+ipx::edit_ip_in_project -upgrade true -name FastPulseWidthCalc_v1_0_project -directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.tmp/FastPulseWidthCalc_v1_0_project c:/FPGA/ip_repo/FastPulseWidthCalc_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/fpga/pulsewidthcalc_artys7/pulsewidthcalc_artys7.tmp/fastpulsewidthcalc_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1274.223 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/FPGA/ip_repo/FastPulseWidthCalc_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1274.223 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+[Thu Apr  6 08:29:05 2023] Launched synth_1...
+Run output will be captured here: c:/fpga/pulsewidthcalc_artys7/pulsewidthcalc_artys7.tmp/fastpulsewidthcalc_v1_0_project/FastPulseWidthCalc_v1_0_project.runs/synth_1/runme.log
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/FPGA/ip_repo/FastPulseWidthCalc_1.0/component.xml' ignored by IP packager.
+INFO: [IP_Flow 19-3166] Bus Interface 'S00_AXI': References existing memory map 'S00_AXI'.
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/FPGA/ip_repo/FastPulseWidthCalc_1.0/component.xml' ignored by IP packager.
+set_property core_revision 15 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/FPGA/ip_repo/FastPulseWidthCalc_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/FPGA/ip_repo/FastPulseWidthCalc_1.0'
+upgrade_ip -vlnv dali.local:user:FastPulseWidthCalc:1.0 [get_ips  BlockDesignArtyS7_FastPulseWidthCalc_0_2] -log ip_upgrade.log
+Upgrading 'C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd'
+INFO: [IP_Flow 19-3422] Upgraded BlockDesignArtyS7_FastPulseWidthCalc_0_2 (FastPulseWidthCalc_v1.0 1.0) from revision 14 to revision 15
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'clk600MHz'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'BlockDesignArtyS7_FastPulseWidthCalc_0_2'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'BlockDesignArtyS7_FastPulseWidthCalc_0_2' has identified issues that may require user intervention. Please review the upgrade log 'c:/FPGA/PulseWidthCalc_ArtyS7/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <C:\FPGA\PulseWidthCalc_ArtyS7\PulseWidthCalc_ArtyS7.srcs\sources_1\bd\BlockDesignArtyS7\BlockDesignArtyS7.bd> 
+Wrote  : <C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ui/bd_38b59005.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/FPGA/PulseWidthCalc_ArtyS7/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips BlockDesignArtyS7_FastPulseWidthCalc_0_2] -no_script -sync -force -quiet
+generate_target all [get_files  C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd]
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+WARNING: [BD 41-927] Following properties on pin /GPIOs_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_1_clk_out1 
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/FastPulseWidthCalc_0/clk600MHz
+
+Wrote  : <C:\FPGA\PulseWidthCalc_ArtyS7\PulseWidthCalc_ArtyS7.srcs\sources_1\bd\BlockDesignArtyS7\BlockDesignArtyS7.bd> 
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/synth/BlockDesignArtyS7.vhd
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/sim/BlockDesignArtyS7.vhd
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hdl/BlockDesignArtyS7_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_xlconcat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FastPulseWidthCalc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block GPIOs_0 .
+Exporting to file C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hw_handoff/BlockDesignArtyS7.hwh
+Generated Block Design Tcl file C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hw_handoff/BlockDesignArtyS7_bd.tcl
+Generated Hardware Definition File C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/synth/BlockDesignArtyS7.hwdef
+export_ip_user_files -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/sim_scripts -ip_user_files_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files -ipstatic_source_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/modelsim} {questa=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/questa} {riviera=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/riviera} {activehdl=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+connect_bd_net [get_bd_pins FastPulseWidthCalc_0/clk600MHz] [get_bd_pins clk_wiz_1/clk_out2]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_1/clk_out2(clk) and /FastPulseWidthCalc_0/clk600MHz(undef)
+validate_bd_design
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+WARNING: [BD 41-927] Following properties on pin /GPIOs_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_1_clk_out1 
+make_wrapper -files [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -top
+INFO: [BD 41-1662] The design 'BlockDesignArtyS7.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\FPGA\PulseWidthCalc_ArtyS7\PulseWidthCalc_ArtyS7.srcs\sources_1\bd\BlockDesignArtyS7\BlockDesignArtyS7.bd> 
+Wrote  : <C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ui/bd_38b59005.ui> 
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/synth/BlockDesignArtyS7.vhd
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/sim/BlockDesignArtyS7.vhd
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hdl/BlockDesignArtyS7_wrapper.vhd
+make_wrapper -files [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -top
+INFO: [BD 41-1662] The design 'BlockDesignArtyS7.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/synth/BlockDesignArtyS7.vhd
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/sim/BlockDesignArtyS7.vhd
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hdl/BlockDesignArtyS7_wrapper.vhd
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [BD 41-1662] The design 'BlockDesignArtyS7.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/synth/BlockDesignArtyS7.vhd
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/sim/BlockDesignArtyS7.vhd
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hdl/BlockDesignArtyS7_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_xlconcat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FastPulseWidthCalc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block GPIOs_0 .
+Exporting to file C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hw_handoff/BlockDesignArtyS7.hwh
+Generated Block Design Tcl file C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hw_handoff/BlockDesignArtyS7_bd.tcl
+Generated Hardware Definition File C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/synth/BlockDesignArtyS7.hwdef
+[Thu Apr  6 08:35:55 2023] Launched synth_1...
+Run output will be captured here: C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/synth_1/runme.log
+[Thu Apr  6 08:35:55 2023] Launched impl_1...
+Run output will be captured here: C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1462.027 ; gain = 38.344
+file copy -force C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.sysdef C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.sdk/BlockDesignArtyS7_wrapper.hdf
+
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210352B7DF59A
+set_property PROGRAM.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+report_ip_status -name ip_status 
+ipx::edit_ip_in_project -upgrade true -name FastPulseWidthCalc_v1_0_project -directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.tmp/FastPulseWidthCalc_v1_0_project c:/FPGA/ip_repo/FastPulseWidthCalc_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/fpga/pulsewidthcalc_artys7/pulsewidthcalc_artys7.tmp/fastpulsewidthcalc_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2575.762 ; gain = 38.309
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/FPGA/ip_repo/FastPulseWidthCalc_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2575.762 ; gain = 38.309
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+[Thu Apr  6 08:51:44 2023] Launched synth_1...
+Run output will be captured here: c:/fpga/pulsewidthcalc_artys7/pulsewidthcalc_artys7.tmp/fastpulsewidthcalc_v1_0_project/FastPulseWidthCalc_v1_0_project.runs/synth_1/runme.log
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/FPGA/ip_repo/FastPulseWidthCalc_1.0/component.xml' ignored by IP packager.
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 16 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/FPGA/ip_repo/FastPulseWidthCalc_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/FPGA/ip_repo/FastPulseWidthCalc_1.0'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv dali.local:user:FastPulseWidthCalc:1.0 [get_ips  BlockDesignArtyS7_FastPulseWidthCalc_0_2] -log ip_upgrade.log
+Upgrading 'C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd'
+INFO: [IP_Flow 19-3422] Upgraded BlockDesignArtyS7_FastPulseWidthCalc_0_2 (FastPulseWidthCalc_v1.0 1.0) from revision 15 to revision 16
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_1/clk_out2(clk) and /FastPulseWidthCalc_0_upgraded_ipi/clk600MHz(undef)
+Wrote  : <C:\FPGA\PulseWidthCalc_ArtyS7\PulseWidthCalc_ArtyS7.srcs\sources_1\bd\BlockDesignArtyS7\BlockDesignArtyS7.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/FPGA/PulseWidthCalc_ArtyS7/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips BlockDesignArtyS7_FastPulseWidthCalc_0_2] -no_script -sync -force -quiet
+generate_target all [get_files  C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd]
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+WARNING: [BD 41-927] Following properties on pin /GPIOs_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_1_clk_out1 
+Wrote  : <C:\FPGA\PulseWidthCalc_ArtyS7\PulseWidthCalc_ArtyS7.srcs\sources_1\bd\BlockDesignArtyS7\BlockDesignArtyS7.bd> 
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/synth/BlockDesignArtyS7.vhd
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/sim/BlockDesignArtyS7.vhd
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hdl/BlockDesignArtyS7_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_xlconcat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FastPulseWidthCalc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block GPIOs_0 .
+Exporting to file C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hw_handoff/BlockDesignArtyS7.hwh
+Generated Block Design Tcl file C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hw_handoff/BlockDesignArtyS7_bd.tcl
+Generated Hardware Definition File C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/synth/BlockDesignArtyS7.hwdef
+export_ip_user_files -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/sim_scripts -ip_user_files_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files -ipstatic_source_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/modelsim} {questa=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/questa} {riviera=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/riviera} {activehdl=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+make_wrapper -files [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -top
+open_bd_design {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:ila:6.2 ila_0
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_0: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+endgroup
+set_property location {1 113 139} [get_bd_cells ila_0]
+delete_bd_objs [get_bd_cells ila_0]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_0 -dir C:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {2}] [get_ips ila_0]
+generate_target {instantiation_template} [get_files c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/ila_0/ila_0_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'...
+catch { config_ip_cache -export [get_ips -all ila_0] }
+export_ip_user_files -of_objects [get_files c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/ila_0/ila_0.xci]
+launch_runs -jobs 8 ila_0_synth_1
+[Thu Apr  6 09:01:52 2023] Launched ila_0_synth_1...
+Run output will be captured here: C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/ila_0_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/ila_0/ila_0.xci] -directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/sim_scripts -ip_user_files_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files -ipstatic_source_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/modelsim} {questa=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/questa} {riviera=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/riviera} {activehdl=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+save_bd_design
+Wrote  : <C:\FPGA\PulseWidthCalc_ArtyS7\PulseWidthCalc_ArtyS7.srcs\sources_1\bd\BlockDesignArtyS7\BlockDesignArtyS7.bd> 
+Wrote  : <C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ui/bd_38b59005.ui> 
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+WARNING: [BD 41-927] Following properties on pin /GPIOs_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_1_clk_out1 
+Wrote  : <C:\FPGA\PulseWidthCalc_ArtyS7\PulseWidthCalc_ArtyS7.srcs\sources_1\bd\BlockDesignArtyS7\BlockDesignArtyS7.bd> 
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/synth/BlockDesignArtyS7.vhd
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/sim/BlockDesignArtyS7.vhd
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hdl/BlockDesignArtyS7_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_xlconcat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FastPulseWidthCalc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block GPIOs_0 .
+Exporting to file C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hw_handoff/BlockDesignArtyS7.hwh
+Generated Block Design Tcl file C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hw_handoff/BlockDesignArtyS7_bd.tcl
+Generated Hardware Definition File C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/synth/BlockDesignArtyS7.hwdef
+[Thu Apr  6 09:23:28 2023] Launched synth_1...
+Run output will be captured here: C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2853.703 ; gain = 31.957
+report_ip_status -name ip_status 
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.C_PROBE1_WIDTH {10}] [get_ips ila_0]
+generate_target all [get_files  c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/ila_0/ila_0_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'...
+catch { config_ip_cache -export [get_ips -all ila_0] }
+export_ip_user_files -of_objects [get_files c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
+reset_run ila_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/ila_0_synth_1
+
+launch_runs -jobs 8 ila_0_synth_1
+[Thu Apr  6 09:24:06 2023] Launched ila_0_synth_1...
+Run output will be captured here: C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/ila_0_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/ila_0/ila_0.xci] -directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/sim_scripts -ip_user_files_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files -ipstatic_source_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/modelsim} {questa=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/questa} {riviera=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/riviera} {activehdl=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Thu Apr  6 09:24:45 2023] Launched synth_1...
+Run output will be captured here: C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/synth_1/runme.log
+report_ip_status -name ip_status 
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7s50csga324-2
+INFO: [Netlist 29-17] Analyzing 293 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7s50csga324-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_microblaze_0_0/BlockDesignArtyS7_microblaze_0_0.xdc] for cell 'BlockDesignArtyS7_i/microblaze_0/U0'
+Finished Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_microblaze_0_0/BlockDesignArtyS7_microblaze_0_0.xdc] for cell 'BlockDesignArtyS7_i/microblaze_0/U0'
+Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_dlmb_v10_0/BlockDesignArtyS7_dlmb_v10_0.xdc] for cell 'BlockDesignArtyS7_i/microblaze_0_local_memory/dlmb_v10/U0'
+Finished Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_dlmb_v10_0/BlockDesignArtyS7_dlmb_v10_0.xdc] for cell 'BlockDesignArtyS7_i/microblaze_0_local_memory/dlmb_v10/U0'
+Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_ilmb_v10_0/BlockDesignArtyS7_ilmb_v10_0.xdc] for cell 'BlockDesignArtyS7_i/microblaze_0_local_memory/ilmb_v10/U0'
+Finished Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_ilmb_v10_0/BlockDesignArtyS7_ilmb_v10_0.xdc] for cell 'BlockDesignArtyS7_i/microblaze_0_local_memory/ilmb_v10/U0'
+Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_microblaze_0_axi_intc_0/BlockDesignArtyS7_microblaze_0_axi_intc_0.xdc] for cell 'BlockDesignArtyS7_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_microblaze_0_axi_intc_0/BlockDesignArtyS7_microblaze_0_axi_intc_0.xdc] for cell 'BlockDesignArtyS7_i/microblaze_0_axi_intc/U0'
+Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_mdm_1_0/BlockDesignArtyS7_mdm_1_0.xdc] for cell 'BlockDesignArtyS7_i/mdm_1/U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_mdm_1_0/BlockDesignArtyS7_mdm_1_0.xdc:50]
+get_clocks: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 3541.344 ; gain = 464.211
+Finished Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_mdm_1_0/BlockDesignArtyS7_mdm_1_0.xdc] for cell 'BlockDesignArtyS7_i/mdm_1/U0'
+Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_clk_wiz_1_0/BlockDesignArtyS7_clk_wiz_1_0_board.xdc] for cell 'BlockDesignArtyS7_i/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_clk_wiz_1_0/BlockDesignArtyS7_clk_wiz_1_0_board.xdc] for cell 'BlockDesignArtyS7_i/clk_wiz_1/inst'
+Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_clk_wiz_1_0/BlockDesignArtyS7_clk_wiz_1_0.xdc] for cell 'BlockDesignArtyS7_i/clk_wiz_1/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_clk_wiz_1_0/BlockDesignArtyS7_clk_wiz_1_0.xdc:57]
+Finished Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_clk_wiz_1_0/BlockDesignArtyS7_clk_wiz_1_0.xdc] for cell 'BlockDesignArtyS7_i/clk_wiz_1/inst'
+Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_rst_clk_wiz_1_100M_0/BlockDesignArtyS7_rst_clk_wiz_1_100M_0_board.xdc] for cell 'BlockDesignArtyS7_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_rst_clk_wiz_1_100M_0/BlockDesignArtyS7_rst_clk_wiz_1_100M_0_board.xdc] for cell 'BlockDesignArtyS7_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_rst_clk_wiz_1_100M_0/BlockDesignArtyS7_rst_clk_wiz_1_100M_0.xdc] for cell 'BlockDesignArtyS7_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_rst_clk_wiz_1_100M_0/BlockDesignArtyS7_rst_clk_wiz_1_100M_0.xdc] for cell 'BlockDesignArtyS7_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_axi_uartlite_0_0/BlockDesignArtyS7_axi_uartlite_0_0_board.xdc] for cell 'BlockDesignArtyS7_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_axi_uartlite_0_0/BlockDesignArtyS7_axi_uartlite_0_0_board.xdc] for cell 'BlockDesignArtyS7_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_axi_uartlite_0_0/BlockDesignArtyS7_axi_uartlite_0_0.xdc] for cell 'BlockDesignArtyS7_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_axi_uartlite_0_0/BlockDesignArtyS7_axi_uartlite_0_0.xdc] for cell 'BlockDesignArtyS7_i/axi_uartlite_0/U0'
+Parsing XDC File [C:/FPGA/PulseWidthCalc_ArtyS7/VHDL/UserFile.xdc]
+Finished Parsing XDC File [C:/FPGA/PulseWidthCalc_ArtyS7/VHDL/UserFile.xdc]
+Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_microblaze_0_axi_intc_0/BlockDesignArtyS7_microblaze_0_axi_intc_0_clocks.xdc] for cell 'BlockDesignArtyS7_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_microblaze_0_axi_intc_0/BlockDesignArtyS7_microblaze_0_axi_intc_0_clocks.xdc] for cell 'BlockDesignArtyS7_i/microblaze_0_axi_intc/U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'BlockDesignArtyS7_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_microblaze_0_0/data/mb_bootloop_le.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 3543.125 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 32 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 16 instances
+
+open_run: Time (s): cpu = 00:00:40 ; elapsed = 00:00:36 . Memory (MB): peak = 3575.809 ; gain = 715.891
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'led[0]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'led[0]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'CLK100MHZ'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'ledmagic'; it is not accessible from the fabric routing.
+set_property mark_debug true [get_nets [list ledmagic_OBUF]]
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'led[0]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'led[1]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'led[2]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'led[0]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'led[1]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'led[2]'; it is not accessible from the fabric routing.
+set_property mark_debug true [get_nets [list {led_OBUF[0]} {led_OBUF[1]} {led_OBUF[2]}]]
+set_property mark_debug true [get_nets [list BlockDesignArtyS7_i/clk_wiz_1/clk_out2]]
+set_property mark_debug true [get_nets [list BlockDesignArtyS7_i/clk_wiz_1/clk_out1]]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*clk*" ]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property C_ADV_TRIGGER true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_0 ]
+endgroup
+create_debug_core u_ila_1 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_1]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_1]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_1]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_1]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_1]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_1]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_1 ]
+set_property C_ADV_TRIGGER true [get_debug_cores u_ila_1 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_1 ]
+set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_1 ]
+endgroup
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list BlockDesignArtyS7_i/clk_wiz_1/inst/clk_out1 ]]
+set_property port_width 1 [get_debug_ports u_ila_1/clk]
+connect_debug_port u_ila_1/clk [get_nets [list BlockDesignArtyS7_i/clk_wiz_1/inst/clk_out2 ]]
+set_property port_width 3 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {led_OBUF[0]} {led_OBUF[1]} {led_OBUF[2]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list BlockDesignArtyS7_i/clk_wiz_1/clk_out1 ]]
+set_property port_width 1 [get_debug_ports u_ila_1/probe0]
+set_property PROBE_TYPE DATA [get_debug_ports u_ila_1/probe0]
+connect_debug_port u_ila_1/probe0 [get_nets [list ledmagic_OBUF ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe1]
+set_property PROBE_TYPE DATA [get_debug_ports u_ila_1/probe1]
+connect_debug_port u_ila_1/probe1 [get_nets [list BlockDesignArtyS7_i/clk_wiz_1_clk_out2 ]]
+set_property target_constrs_file C:/FPGA/PulseWidthCalc_ArtyS7/VHDL/UserFile.xdc [current_fileset -constrset]
+save_constraints -force
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 3580.535 ; gain = 0.000
+launch_runs impl_1 -jobs 8
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 3584.141 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 3584.141 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 3588.797 ; gain = 0.000
+[Thu Apr  6 09:41:04 2023] Launched impl_1...
+Run output will be captured here: C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/runme.log
+open_bd_design {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd}
+open_bd_design {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd}
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Apr  6 09:52:55 2023] Launched impl_1...
+Run output will be captured here: C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210352B7DF59A
+set_property PROGRAM.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.bit} [get_hw_devices xc7s50_0]
+set_property PROBES.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.ltx} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.ltx} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_1' at location 'uuid_3B505A030738513C98471D25F5B1F848' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.ltx} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.ltx} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 17, cse driver version: 0. Slave initialization skipped.
+ERROR: [Xicom 50-38] xicom: Device:0, user chain number:1, slave index:1. Reading intermittently wrong data from core. Try slower target speed. Make sure design meets timing requirements.
+ERROR: [Xicom 50-38] xicom: Device:0, user chain number:1, slave index:1, is not a valid CseXsdb Slave core.
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+set_property PROBES.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.ltx} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.ltx} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+ERROR: [Xicom 50-38] xicom: Device:0, user chain number:1, slave index:0. Reading intermittently wrong data from core. Try slower target speed. Make sure design meets timing requirements.
+ERROR: [Xicom 50-38] xicom: Device:0, user chain number:1, slave index:0, is not a valid CseXsdb Slave core.
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 17, cse driver version: 0. Slave initialization skipped.
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 17, cse driver version: 0. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_1' at location 'uuid_3B505A030738513C98471D25F5B1F848' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.ltx} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.ltx} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 17, cse driver version: 0. Slave initialization skipped.
+ERROR: [Xicom 50-38] xicom: Device:0, user chain number:1, slave index:1. Reading intermittently wrong data from core. Try slower target speed. Make sure design meets timing requirements.
+ERROR: [Xicom 50-38] xicom: Device:0, user chain number:1, slave index:1, is not a valid CseXsdb Slave core.
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xc7s50_0] 0] [lindex [get_cfgmem_parts {is25lp016d-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7s50_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7s50_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7s50_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7s50_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7s50_0] 0]]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+CRITICAL WARNING: [Labtools 27-1433] Device xc7s50 (JTAG device index = 0) is programmed with a design that has an unrecognizable debug core (slave type = 17) at user chain = 1, index = 1.
+Resolution: 
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the JTAG clock frequency is 2.5x times slower than the frequency of the clock connected to your debug hub.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_1' at location 'uuid_3B505A030738513C98471D25F5B1F848' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.ltx} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.ltx} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 17, cse driver version: 0. Slave initialization skipped.
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 17, cse driver version: 17. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_1' at location 'uuid_3B505A030738513C98471D25F5B1F848' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.ltx} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.ltx} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 17, cse driver version: 0. Slave initialization skipped.
+ERROR: [Xicom 50-38] xicom: Device:0, user chain number:1, slave index:1. Reading intermittently wrong data from core. Try slower target speed. Make sure design meets timing requirements.
+ERROR: [Xicom 50-38] xicom: Device:0, user chain number:1, slave index:1, is not a valid CseXsdb Slave core.
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+close_hw
+open_bd_design {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd}
+open_bd_design {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd}
+WARNING: [BD 41-1282] Ignoring parameter WIZ_DATA_WIDTH
+WARNING: [BD 41-1282] Ignoring parameter WIZ_NUM_REG
+WARNING: [BD 41-1282] Ignoring parameter WIZ_DATA_WIDTH
+WARNING: [BD 41-1282] Ignoring parameter WIZ_NUM_REG
+ipx::edit_ip_in_project -upgrade true -name FastPulseWidthCalc_v1_0_project -directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.tmp/FastPulseWidthCalc_v1_0_project c:/FPGA/ip_repo/FastPulseWidthCalc_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/fpga/pulsewidthcalc_artys7/pulsewidthcalc_artys7.tmp/fastpulsewidthcalc_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 4268.258 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/FPGA/ip_repo/FastPulseWidthCalc_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 4268.258 ; gain = 0.000
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/FPGA/ip_repo/FastPulseWidthCalc_1.0/component.xml' ignored by IP packager.
+set_property core_revision 17 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/FPGA/ip_repo/FastPulseWidthCalc_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/FPGA/ip_repo/FastPulseWidthCalc_1.0'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv dali.local:user:FastPulseWidthCalc:1.0 [get_ips  BlockDesignArtyS7_FastPulseWidthCalc_0_2] -log ip_upgrade.log
+Upgrading 'C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd'
+INFO: [IP_Flow 19-3422] Upgraded BlockDesignArtyS7_FastPulseWidthCalc_0_2 (FastPulseWidthCalc_v1.0 1.0) from revision 16 to revision 17
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_1/clk_out2(clk) and /FastPulseWidthCalc_0_upgraded_ipi/clk600MHz(undef)
+Wrote  : <C:\FPGA\PulseWidthCalc_ArtyS7\PulseWidthCalc_ArtyS7.srcs\sources_1\bd\BlockDesignArtyS7\BlockDesignArtyS7.bd> 
+Wrote  : <C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ui/bd_38b59005.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/FPGA/PulseWidthCalc_ArtyS7/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips BlockDesignArtyS7_FastPulseWidthCalc_0_2] -no_script -sync -force -quiet
+generate_target all [get_files  C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd]
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+WARNING: [BD 41-927] Following properties on pin /GPIOs_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_1_clk_out1 
+Wrote  : <C:\FPGA\PulseWidthCalc_ArtyS7\PulseWidthCalc_ArtyS7.srcs\sources_1\bd\BlockDesignArtyS7\BlockDesignArtyS7.bd> 
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/synth/BlockDesignArtyS7.vhd
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/sim/BlockDesignArtyS7.vhd
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hdl/BlockDesignArtyS7_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_xlconcat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FastPulseWidthCalc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block GPIOs_0 .
+Exporting to file C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hw_handoff/BlockDesignArtyS7.hwh
+Generated Block Design Tcl file C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hw_handoff/BlockDesignArtyS7_bd.tcl
+Generated Hardware Definition File C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/synth/BlockDesignArtyS7.hwdef
+export_ip_user_files -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/sim_scripts -ip_user_files_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files -ipstatic_source_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/modelsim} {questa=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/questa} {riviera=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/riviera} {activehdl=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+validate_bd_design -force
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+WARNING: [BD 41-927] Following properties on pin /GPIOs_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_1_clk_out1 
+report_ip_status -name ip_status 
+save_bd_design
+Wrote  : <C:\FPGA\PulseWidthCalc_ArtyS7\PulseWidthCalc_ArtyS7.srcs\sources_1\bd\BlockDesignArtyS7\BlockDesignArtyS7.bd> 
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+INFO: [BD 41-1662] The design 'BlockDesignArtyS7.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/synth/BlockDesignArtyS7.vhd
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/sim/BlockDesignArtyS7.vhd
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hdl/BlockDesignArtyS7_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_xlconcat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FastPulseWidthCalc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block GPIOs_0 .
+Exporting to file C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hw_handoff/BlockDesignArtyS7.hwh
+Generated Block Design Tcl file C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hw_handoff/BlockDesignArtyS7_bd.tcl
+Generated Hardware Definition File C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/synth/BlockDesignArtyS7.hwdef
+[Thu Apr  6 10:06:44 2023] Launched synth_1...
+Run output will be captured here: C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:36 . Memory (MB): peak = 4268.258 ; gain = 0.000
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7s50csga324-2
+INFO: [Netlist 29-17] Analyzing 293 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_microblaze_0_0/BlockDesignArtyS7_microblaze_0_0.xdc] for cell 'BlockDesignArtyS7_i/microblaze_0/U0'
+Finished Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_microblaze_0_0/BlockDesignArtyS7_microblaze_0_0.xdc] for cell 'BlockDesignArtyS7_i/microblaze_0/U0'
+Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_dlmb_v10_0/BlockDesignArtyS7_dlmb_v10_0.xdc] for cell 'BlockDesignArtyS7_i/microblaze_0_local_memory/dlmb_v10/U0'
+Finished Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_dlmb_v10_0/BlockDesignArtyS7_dlmb_v10_0.xdc] for cell 'BlockDesignArtyS7_i/microblaze_0_local_memory/dlmb_v10/U0'
+Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_ilmb_v10_0/BlockDesignArtyS7_ilmb_v10_0.xdc] for cell 'BlockDesignArtyS7_i/microblaze_0_local_memory/ilmb_v10/U0'
+Finished Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_ilmb_v10_0/BlockDesignArtyS7_ilmb_v10_0.xdc] for cell 'BlockDesignArtyS7_i/microblaze_0_local_memory/ilmb_v10/U0'
+Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_microblaze_0_axi_intc_0/BlockDesignArtyS7_microblaze_0_axi_intc_0.xdc] for cell 'BlockDesignArtyS7_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_microblaze_0_axi_intc_0/BlockDesignArtyS7_microblaze_0_axi_intc_0.xdc] for cell 'BlockDesignArtyS7_i/microblaze_0_axi_intc/U0'
+Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_mdm_1_0/BlockDesignArtyS7_mdm_1_0.xdc] for cell 'BlockDesignArtyS7_i/mdm_1/U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_mdm_1_0/BlockDesignArtyS7_mdm_1_0.xdc:50]
+Finished Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_mdm_1_0/BlockDesignArtyS7_mdm_1_0.xdc] for cell 'BlockDesignArtyS7_i/mdm_1/U0'
+Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_clk_wiz_1_0/BlockDesignArtyS7_clk_wiz_1_0_board.xdc] for cell 'BlockDesignArtyS7_i/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_clk_wiz_1_0/BlockDesignArtyS7_clk_wiz_1_0_board.xdc] for cell 'BlockDesignArtyS7_i/clk_wiz_1/inst'
+Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_clk_wiz_1_0/BlockDesignArtyS7_clk_wiz_1_0.xdc] for cell 'BlockDesignArtyS7_i/clk_wiz_1/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_clk_wiz_1_0/BlockDesignArtyS7_clk_wiz_1_0.xdc:57]
+Finished Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_clk_wiz_1_0/BlockDesignArtyS7_clk_wiz_1_0.xdc] for cell 'BlockDesignArtyS7_i/clk_wiz_1/inst'
+Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_rst_clk_wiz_1_100M_0/BlockDesignArtyS7_rst_clk_wiz_1_100M_0_board.xdc] for cell 'BlockDesignArtyS7_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_rst_clk_wiz_1_100M_0/BlockDesignArtyS7_rst_clk_wiz_1_100M_0_board.xdc] for cell 'BlockDesignArtyS7_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_rst_clk_wiz_1_100M_0/BlockDesignArtyS7_rst_clk_wiz_1_100M_0.xdc] for cell 'BlockDesignArtyS7_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_rst_clk_wiz_1_100M_0/BlockDesignArtyS7_rst_clk_wiz_1_100M_0.xdc] for cell 'BlockDesignArtyS7_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_axi_uartlite_0_0/BlockDesignArtyS7_axi_uartlite_0_0_board.xdc] for cell 'BlockDesignArtyS7_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_axi_uartlite_0_0/BlockDesignArtyS7_axi_uartlite_0_0_board.xdc] for cell 'BlockDesignArtyS7_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_axi_uartlite_0_0/BlockDesignArtyS7_axi_uartlite_0_0.xdc] for cell 'BlockDesignArtyS7_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_axi_uartlite_0_0/BlockDesignArtyS7_axi_uartlite_0_0.xdc] for cell 'BlockDesignArtyS7_i/axi_uartlite_0/U0'
+Parsing XDC File [C:/FPGA/PulseWidthCalc_ArtyS7/VHDL/UserFile.xdc]
+Finished Parsing XDC File [C:/FPGA/PulseWidthCalc_ArtyS7/VHDL/UserFile.xdc]
+Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_microblaze_0_axi_intc_0/BlockDesignArtyS7_microblaze_0_axi_intc_0_clocks.xdc] for cell 'BlockDesignArtyS7_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_microblaze_0_axi_intc_0/BlockDesignArtyS7_microblaze_0_axi_intc_0_clocks.xdc] for cell 'BlockDesignArtyS7_i/microblaze_0_axi_intc/U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'BlockDesignArtyS7_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ip/BlockDesignArtyS7_microblaze_0_0/data/mb_bootloop_le.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 4268.258 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 32 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 16 instances
+
+open_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 4585.074 ; gain = 316.816
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'u_ila_0_clk_out1'; it was auto-generated for Vivado debug.
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport1_i_1[9]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport1_i_1[8]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport1_i_1[7]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport1_i_1[6]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport1_i_1[5]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport1_i_1[4]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport1_i_1[3]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport1_i_1[2]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport1_i_1[1]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport1_i_1[16]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport1_i_1[15]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport1_i_1[14]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport1_i_1[13]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport1_i_1[12]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport1_i_1[11]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport1_i_1[10]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport1_i_1[0]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport0_i_0[9]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport0_i_0[8]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport0_i_0[7]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport0_i_0[6]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport0_i_0[5]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'u_ila_1_clk_out2'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport0_i_0[4]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport0_i_0[3]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport0_i_0[2]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport0_i_0[1]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport0_i_0[16]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport0_i_0[15]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport0_i_0[14]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport0_i_0[13]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport0_i_0[12]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport0_i_0[11]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport0_i_0[10]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_oport0_i_0[0]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[9]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[8]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[7]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[6]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[5]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[3]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[36]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[35]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[34]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[33]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[32]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[31]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[30]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[2]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[29]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[28]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[27]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[26]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[25]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[24]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[23]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[17]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport0_o_0[4]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[10]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[15]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport0_o_0[35]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport0_o_0[30]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport0_o_0[7]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[16]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport0_o_0[28]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport0_o_0[32]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport0_o_0[27]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[13]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[14]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport0_o_0[26]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport0_o_0[25]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport0_o_0[2]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[19]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport0_o_0[24]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport0_o_0[23]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport0_o_0[21]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport0_o_0[16]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport0_o_0[15]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport0_o_0[13]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport0_o_0[22]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[22]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport0_o_0[0]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[1]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport0_o_0[1]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport0_o_0[29]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport0_o_0[9]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[12]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport0_o_0[34]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport0_o_0[5]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport0_o_0[8]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[0]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport0_o_0[11]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[21]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport0_o_0[19]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport0_o_0[33]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'u_ila_0_clk_out1'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport0_o_0[3]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[11]'; it was auto-generated for Vivado debug.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'sl_iport1_o_1[20]'; it was auto-generated for Vivado debug.
+INFO: [Common 17-14] Message 'Chipscope 16-3' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+delete_debug_core [get_debug_cores {u_ila_0 u_ila_1 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property C_ADV_TRIGGER true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_0 ]
+endgroup
+create_debug_core u_ila_1 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_1]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_1]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_1]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_1]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_1]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_1]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_1 ]
+set_property C_ADV_TRIGGER true [get_debug_cores u_ila_1 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_1 ]
+set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_1 ]
+endgroup
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list BlockDesignArtyS7_i/clk_wiz_1/inst/clk_out1 ]]
+set_property port_width 1 [get_debug_ports u_ila_1/clk]
+connect_debug_port u_ila_1/clk [get_nets [list BlockDesignArtyS7_i/clk_wiz_1/inst/clk_out2 ]]
+set_property port_width 3 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {led_OBUF[0]} {led_OBUF[1]} {led_OBUF[2]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 2 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {BlockDesignArtyS7_i/FastPulseWidthCalc_0/U0/FastPulseWidthCalc_v1_0_S00_AXI_inst/axi_araddr[2]} {BlockDesignArtyS7_i/FastPulseWidthCalc_0/U0/FastPulseWidthCalc_v1_0_S00_AXI_inst/axi_araddr[3]} ]]
+set_property port_width 1 [get_debug_ports u_ila_1/probe0]
+set_property PROBE_TYPE DATA [get_debug_ports u_ila_1/probe0]
+connect_debug_port u_ila_1/probe0 [get_nets [list ledmagic_OBUF ]]
+set_property mark_debug true [get_nets [list {BlockDesignArtyS7_i/GPIOs_0/U0/led[0]} {BlockDesignArtyS7_i/GPIOs_0/U0/led[1]} {BlockDesignArtyS7_i/GPIOs_0/U0/led[2]}]]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*led*" ]
+delete_debug_core [get_debug_cores {u_ila_0 u_ila_1 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property C_ADV_TRIGGER true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_0 ]
+endgroup
+create_debug_core u_ila_1 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_1]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_1]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_1]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_1]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_1]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_1]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_1 ]
+set_property C_ADV_TRIGGER true [get_debug_cores u_ila_1 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_1 ]
+set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_1 ]
+endgroup
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list BlockDesignArtyS7_i/clk_wiz_1/inst/clk_out1 ]]
+set_property port_width 1 [get_debug_ports u_ila_1/clk]
+connect_debug_port u_ila_1/clk [get_nets [list BlockDesignArtyS7_i/clk_wiz_1/inst/clk_out2 ]]
+set_property port_width 3 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {led_OBUF[0]} {led_OBUF[1]} {led_OBUF[2]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 2 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {BlockDesignArtyS7_i/FastPulseWidthCalc_0/U0/FastPulseWidthCalc_v1_0_S00_AXI_inst/axi_araddr[2]} {BlockDesignArtyS7_i/FastPulseWidthCalc_0/U0/FastPulseWidthCalc_v1_0_S00_AXI_inst/axi_araddr[3]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {BlockDesignArtyS7_i/FastPulseWidthCalc_0/U0/FastPulseWidthCalc_v1_0_S00_AXI_inst/p_0_in[0]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 5 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {BlockDesignArtyS7_i/axi_uartlite_0/U0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/CNTR_INCR_DECR_ADDN_F_I/addr_i_p1[0]} {BlockDesignArtyS7_i/axi_uartlite_0/U0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/CNTR_INCR_DECR_ADDN_F_I/addr_i_p1[1]} {BlockDesignArtyS7_i/axi_uartlite_0/U0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/CNTR_INCR_DECR_ADDN_F_I/addr_i_p1[2]} {BlockDesignArtyS7_i/axi_uartlite_0/U0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/CNTR_INCR_DECR_ADDN_F_I/addr_i_p1[3]} {BlockDesignArtyS7_i/axi_uartlite_0/U0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/CNTR_INCR_DECR_ADDN_F_I/addr_i_p1[4]} ]]
+set_property port_width 1 [get_debug_ports u_ila_1/probe0]
+set_property PROBE_TYPE DATA [get_debug_ports u_ila_1/probe0]
+connect_debug_port u_ila_1/probe0 [get_nets [list ledmagic_OBUF ]]
+save_constraints
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 4598.926 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 4598.926 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 4598.926 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 4598.926 ; gain = 0.000
+[Thu Apr  6 10:26:35 2023] Launched impl_1...
+Run output will be captured here: C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/runme.log
+open_bd_design {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd}
+validate_bd_design -force
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+WARNING: [BD 41-927] Following properties on pin /GPIOs_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_1_clk_out1 
+save_bd_design
+Wrote  : <C:\FPGA\PulseWidthCalc_ArtyS7\PulseWidthCalc_ArtyS7.srcs\sources_1\bd\BlockDesignArtyS7\BlockDesignArtyS7.bd> 
+reset_run synth_1
+make_wrapper -files [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -top
+INFO: [BD 41-1662] The design 'BlockDesignArtyS7.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/synth/BlockDesignArtyS7.vhd
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/sim/BlockDesignArtyS7.vhd
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hdl/BlockDesignArtyS7_wrapper.vhd
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [BD 41-1662] The design 'BlockDesignArtyS7.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/synth/BlockDesignArtyS7.vhd
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/sim/BlockDesignArtyS7.vhd
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hdl/BlockDesignArtyS7_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_xlconcat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FastPulseWidthCalc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block GPIOs_0 .
+Exporting to file C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hw_handoff/BlockDesignArtyS7.hwh
+Generated Block Design Tcl file C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hw_handoff/BlockDesignArtyS7_bd.tcl
+Generated Hardware Definition File C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/synth/BlockDesignArtyS7.hwdef
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Apr  6 10:33:40 2023] Launched synth_1...
+Run output will be captured here: C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/synth_1/runme.log
+[Thu Apr  6 10:33:40 2023] Launched impl_1...
+Run output will be captured here: C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:26 . Memory (MB): peak = 4598.926 ; gain = 0.000
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210352B7DF59A
+set_property PROGRAM.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.bit} [get_hw_devices xc7s50_0]
+set_property PROBES.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.ltx} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.ltx} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 17, cse driver version: 0. Slave initialization skipped.
+ERROR: [Xicom 50-38] xicom: Device:0, user chain number:1, slave index:1. Reading intermittently wrong data from core. Try slower target speed. Make sure design meets timing requirements.
+ERROR: [Xicom 50-38] xicom: Device:0, user chain number:1, slave index:1, is not a valid CseXsdb Slave core.
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 17, cse driver version: 0. Slave initialization skipped.
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 17, cse driver version: 0. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_1' at location 'uuid_3B505A030738513C98471D25F5B1F848' from probes file, since it cannot be found on the programmed device.
+create_hw_cfgmem -hw_device [get_hw_devices xc7s50_0] -mem_dev [lindex [get_cfgmem_parts {is25lp016d-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.ltx} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.ltx} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_1' at location 'uuid_3B505A030738513C98471D25F5B1F848' from probes file, since it cannot be found on the programmed device.
+close_hw
+close_design
+export_ip_user_files -of_objects  [get_files c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/ila_0/ila_0.xci] -no_script -reset -force -quiet
+remove_files  -fileset ila_0 c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/ila_0/ila_0.xci
+INFO: [Project 1-386] Moving file 'c:/Users/fmabrouk/Documents/FPGA/FIR_SysGen/SysGenIP/ip/ila_0/ila_0.xci' from fileset 'ila_0' to fileset 'sources_1'.
+make_wrapper -files [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -top
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Apr  6 11:04:17 2023] Launched impl_1...
+Run output will be captured here: C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/runme.log
+file copy -force C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/BlockDesignArtyS7_wrapper.sysdef C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.sdk/BlockDesignArtyS7_wrapper.hdf
+
+ipx::edit_ip_in_project -upgrade true -name FastPulseWidthCalc_v1_0_project -directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.tmp/FastPulseWidthCalc_v1_0_project c:/FPGA/ip_repo/FastPulseWidthCalc_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/fpga/pulsewidthcalc_artys7/pulsewidthcalc_artys7.tmp/fastpulsewidthcalc_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 4598.926 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/FPGA/ip_repo/FastPulseWidthCalc_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 4598.926 ; gain = 0.000
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/FPGA/ip_repo/FastPulseWidthCalc_1.0/component.xml' ignored by IP packager.
+set_property core_revision 18 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/FPGA/ip_repo/FastPulseWidthCalc_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/FPGA/ip_repo/FastPulseWidthCalc_1.0'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv dali.local:user:FastPulseWidthCalc:1.0 [get_ips  BlockDesignArtyS7_FastPulseWidthCalc_0_2] -log ip_upgrade.log
+Upgrading 'C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd'
+INFO: [IP_Flow 19-3422] Upgraded BlockDesignArtyS7_FastPulseWidthCalc_0_2 (FastPulseWidthCalc_v1.0 1.0) from revision 17 to revision 18
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_1/clk_out2(clk) and /FastPulseWidthCalc_0_upgraded_ipi/clk600MHz(undef)
+Wrote  : <C:\FPGA\PulseWidthCalc_ArtyS7\PulseWidthCalc_ArtyS7.srcs\sources_1\bd\BlockDesignArtyS7\BlockDesignArtyS7.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/FPGA/PulseWidthCalc_ArtyS7/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips BlockDesignArtyS7_FastPulseWidthCalc_0_2] -no_script -sync -force -quiet
+generate_target all [get_files  C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd]
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+WARNING: [BD 41-927] Following properties on pin /GPIOs_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_1_clk_out1 
+Wrote  : <C:\FPGA\PulseWidthCalc_ArtyS7\PulseWidthCalc_ArtyS7.srcs\sources_1\bd\BlockDesignArtyS7\BlockDesignArtyS7.bd> 
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/synth/BlockDesignArtyS7.vhd
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/sim/BlockDesignArtyS7.vhd
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hdl/BlockDesignArtyS7_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_xlconcat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FastPulseWidthCalc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block GPIOs_0 .
+Exporting to file C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hw_handoff/BlockDesignArtyS7.hwh
+Generated Block Design Tcl file C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hw_handoff/BlockDesignArtyS7_bd.tcl
+Generated Hardware Definition File C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/synth/BlockDesignArtyS7.hwdef
+export_ip_user_files -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/sim_scripts -ip_user_files_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files -ipstatic_source_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/modelsim} {questa=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/questa} {riviera=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/riviera} {activehdl=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+make_wrapper -files [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Apr  6 11:14:06 2023] Launched synth_1...
+Run output will be captured here: C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/synth_1/runme.log
+[Thu Apr  6 11:14:06 2023] Launched impl_1...
+Run output will be captured here: C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/runme.log
+delete_bd_objs [get_bd_nets clk_wiz_1_clk_out2]
+connect_bd_net [get_bd_pins FastPulseWidthCalc_0/clk600MHz] [get_bd_pins clk_wiz_1/clk_out2]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /FastPulseWidthCalc_0/clk600MHz(undef) and /clk_wiz_1/clk_out2(clk)
+generate_target all [get_files  C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd]
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+WARNING: [BD 41-1284] Cannot set parameter SUGGESTED_PRIORITY on port /microblaze_0_axi_intc/intr
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+WARNING: [BD 41-927] Following properties on pin /GPIOs_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_1_clk_out1 
+Wrote  : <C:\FPGA\PulseWidthCalc_ArtyS7\PulseWidthCalc_ArtyS7.srcs\sources_1\bd\BlockDesignArtyS7\BlockDesignArtyS7.bd> 
+Wrote  : <C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/ui/bd_38b59005.ui> 
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/synth/BlockDesignArtyS7.vhd
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/sim/BlockDesignArtyS7.vhd
+VHDL Output written to : C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hdl/BlockDesignArtyS7_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_xlconcat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FastPulseWidthCalc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block GPIOs_0 .
+Exporting to file C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hw_handoff/BlockDesignArtyS7.hwh
+Generated Block Design Tcl file C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/hw_handoff/BlockDesignArtyS7_bd.tcl
+Generated Hardware Definition File C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/synth/BlockDesignArtyS7.hwdef
+export_ip_user_files -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -directory C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/sim_scripts -ip_user_files_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files -ipstatic_source_dir C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/modelsim} {questa=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/questa} {riviera=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/riviera} {activehdl=C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.srcs/sources_1/bd/BlockDesignArtyS7/BlockDesignArtyS7.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Apr  6 11:20:24 2023] Launched synth_1...
+Run output will be captured here: C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/synth_1/runme.log
+[Thu Apr  6 11:20:25 2023] Launched impl_1...
+Run output will be captured here: C:/FPGA/PulseWidthCalc_ArtyS7/PulseWidthCalc_ArtyS7.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  6 11:23:56 2023...
